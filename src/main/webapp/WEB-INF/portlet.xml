@@ -7,9 +7,9 @@
 	version="2.0">
 
 	<portlet>
-		<description>This is a template of a QBiC portlet</description>
-		<portlet-name>Portlet Template</portlet-name>
-		<display-name>Portlet Template</display-name>
+		<description>This is the workflow portlet including the admin panel and workflow monitor.</description>
+		<portlet-name>qFlowMonitor</portlet-name>
+		<display-name>qFlowMonitor</display-name>
 
 		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
 
@@ -30,8 +30,8 @@
 
 
 		<portlet-info>
-			<title>Portlet Template</title>
-			<short-title>Portlet Template</short-title>
+			<title>qFlowMonitor</title>
+			<short-title>qFlowMonitor</short-title>
 			<keywords>Vaadin 7</keywords>
 		</portlet-info>
 
@@ -49,4 +49,93 @@
 		</security-role-ref>
 
 	</portlet>
+	
+	<portlet>
+		<description>This is the workflow portlet including the admin panel and workflow monitor.</description>
+		<portlet-name>qFlowAdminPanel</portlet-name>
+		<display-name>qFlowAdminPanel</display-name>
+
+		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
+
+		<init-param>
+			<name>UI</name>
+			<value>life.qbic.AdminPanelUI</value>
+		</init-param>
+
+		<init-param>
+			<name>vaadin.resources.path</name>
+			<value>PORTLET_CONTEXT</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>qFlowAdminPanel</title>
+			<short-title>qFlowAdminPanel</short-title>
+			<keywords>Vaadin 7</keywords>
+		</portlet-info>
+
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+
+	</portlet>
+	
+	<portlet>
+		<description>This is the workflow portlet including the admin panel and workflow monitor.</description>
+		<portlet-name>qFlowAbout</portlet-name>
+		<display-name>qFlowAbout</display-name>
+
+		<portlet-class>com.vaadin.server.VaadinPortlet</portlet-class>
+
+		<init-param>
+			<name>UI</name>
+			<value>life.qbic.AboutUI</value>
+		</init-param>
+
+		<init-param>
+			<name>vaadin.resources.path</name>
+			<value>PORTLET_CONTEXT</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>qFlowAbout</title>
+			<short-title>qFlowAbout</short-title>
+			<keywords>Vaadin 7</keywords>
+		</portlet-info>
+
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+
+	</portlet>
+	
 </portlet-app>
