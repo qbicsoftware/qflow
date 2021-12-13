@@ -12,8 +12,8 @@
 		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<vaadin.version>7.7.8</vaadin.version>
-		<vaadin.plugin.version>7.7.8</vaadin.plugin.version>
+		<vaadin.version>7.7.24</vaadin.version>
+		<vaadin.plugin.version>7.7.24</vaadin.plugin.version>
 		<liferay.version>6.2.5</liferay.version>
 		<liferay.maven.plugin.version>6.2.5</liferay.maven.plugin.version>
 	</properties>
@@ -118,7 +118,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -153,14 +153,14 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.6</version>
+			<version>8.0.27</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
-			<version>2.0.2</version>
+			<version>2.7.3</version>
 		</dependency>
 		
 		<dependency>
